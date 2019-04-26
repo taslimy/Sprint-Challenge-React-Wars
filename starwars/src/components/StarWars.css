@@ -1,0 +1,50 @@
+/* Character Container */
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.character-container .characters-info {
+  background: white;
+  margin-bottom: 50px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 4px;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Information Of Characters */
+
+.characters-info .info-attributes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ece9e6;
+}
+
+.characters-info h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #333333;
+}
+
+.characters-info span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
