@@ -6,12 +6,9 @@ import Characters from "./Characters";
 const CharacterList = (props) => {
   return (
     <div>
-      <div id="list-container">
-        {props.CharacterInfo.map(item => {
-          // not getting style on classname
-          return (<Characters className="character-comps" objInfo={item} />);
-        })}
-      </div>
+        {props.CharacterInfo.map(item => (
+          <Characters objInfo={item} />
+        ))}
     </div>
   );
 };
