@@ -7,9 +7,9 @@ const CharacterList = (props) => {
   return (
     <div>
       <div id="list-container">
-        {props.CharacterInfo.map(item => (
-          <Characters className="character-comp" objInfo={item} />
-        ))}
+        {props.CharacterInfo.map(item => {
+          return (<Characters className="character-comp" objInfo={item} />);
+        })}
       </div>
     </div>
   );
