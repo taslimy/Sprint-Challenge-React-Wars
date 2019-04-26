@@ -8,7 +8,8 @@ const CharacterList = (props) => {
     <div>
       <div id="list-container">
         {props.CharacterInfo.map(item => {
-          return (<Characters className="character-comp" objInfo={item} />);
+          // not getting style on classname
+          return (<Characters className="character-comps" objInfo={item} />);
         })}
       </div>
     </div>
